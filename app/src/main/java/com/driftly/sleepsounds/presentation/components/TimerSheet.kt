@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilterChip
@@ -22,9 +23,14 @@ import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.driftly.sleepsounds.presentation.theme.Background
+import com.driftly.sleepsounds.presentation.theme.OnSurfaceDim
 import com.driftly.sleepsounds.presentation.theme.Primary
 import com.driftly.sleepsounds.presentation.theme.Surface
+import com.driftly.sleepsounds.presentation.theme.SurfaceVariant
 
 data class TimerOption(val label: String, val durationMs: Long)
 data class FadeOption(val label: String, val durationMs: Long)
@@ -65,18 +71,20 @@ fun TimerSheet(
         Text(
             text = "Sleep Timer",
             style = MaterialTheme.typography.headlineSmall,
-            color = MaterialTheme.colorScheme.onBackground
+            color = MaterialTheme.colorScheme.onBackground,
+            fontWeight = FontWeight.Bold
         )
 
         Spacer(modifier = Modifier.height(20.dp))
 
         Text(
-            text = "Duration",
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.onSurface
+            text = "DURATION",
+            style = MaterialTheme.typography.labelMedium,
+            color = OnSurfaceDim,
+            fontWeight = FontWeight.SemiBold
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(10.dp))
 
         FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -86,24 +94,39 @@ fun TimerSheet(
                 FilterChip(
                     selected = selectedDuration == option.durationMs,
                     onClick = { selectedDuration = option.durationMs },
-                    label = { Text(option.label) },
+                    label = {
+                        Text(
+                            option.label,
+                            style = MaterialTheme.typography.labelMedium
+                        )
+                    },
+                    shape = RoundedCornerShape(12.dp),
                     colors = FilterChipDefaults.filterChipColors(
                         selectedContainerColor = Primary,
-                        selectedLabelColor = Surface
+                        selectedLabelColor = Background,
+                        containerColor = Surface,
+                        labelColor = MaterialTheme.colorScheme.onSurface
+                    ),
+                    border = FilterChipDefaults.filterChipBorder(
+                        borderColor = Color.Transparent,
+                        selectedBorderColor = Color.Transparent,
+                        enabled = true,
+                        selected = selectedDuration == option.durationMs
                     )
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
         Text(
-            text = "Fade out over",
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.onSurface
+            text = "FADE OUT",
+            style = MaterialTheme.typography.labelMedium,
+            color = OnSurfaceDim,
+            fontWeight = FontWeight.SemiBold
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(10.dp))
 
         FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -113,16 +136,30 @@ fun TimerSheet(
                 FilterChip(
                     selected = selectedFade == option.durationMs,
                     onClick = { selectedFade = option.durationMs },
-                    label = { Text(option.label) },
+                    label = {
+                        Text(
+                            option.label,
+                            style = MaterialTheme.typography.labelMedium
+                        )
+                    },
+                    shape = RoundedCornerShape(12.dp),
                     colors = FilterChipDefaults.filterChipColors(
                         selectedContainerColor = Primary,
-                        selectedLabelColor = Surface
+                        selectedLabelColor = Background,
+                        containerColor = Surface,
+                        labelColor = MaterialTheme.colorScheme.onSurface
+                    ),
+                    border = FilterChipDefaults.filterChipBorder(
+                        borderColor = Color.Transparent,
+                        selectedBorderColor = Color.Transparent,
+                        enabled = true,
+                        selected = selectedFade == option.durationMs
                     )
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(28.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -134,7 +171,8 @@ fun TimerSheet(
                         onCancelTimer()
                         onDismiss()
                     },
-                    modifier = Modifier.weight(1f)
+                    modifier = Modifier.weight(1f),
+                    shape = RoundedCornerShape(14.dp)
                 ) {
                     Text("Cancel Timer")
                 }
@@ -145,12 +183,16 @@ fun TimerSheet(
                     onStartTimer(selectedDuration, selectedFade)
                     onDismiss()
                 },
-                modifier = Modifier.weight(1f),
-                colors = ButtonDefaults.buttonColors(containerColor = Primary)
+                modifier = Modifier
+                    .weight(1f)
+                    .height(48.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Primary),
+                shape = RoundedCornerShape(14.dp)
             ) {
                 Text(
                     text = if (isTimerActive) "Update Timer" else "Start Timer",
-                    color = Surface
+                    color = Background,
+                    fontWeight = FontWeight.SemiBold
                 )
             }
         }

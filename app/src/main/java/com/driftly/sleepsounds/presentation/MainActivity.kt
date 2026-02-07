@@ -26,6 +26,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -33,6 +34,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.driftly.sleepsounds.presentation.navigation.DriftlyNavGraph
 import com.driftly.sleepsounds.presentation.navigation.Screen
+import com.driftly.sleepsounds.presentation.theme.Background
 import com.driftly.sleepsounds.presentation.theme.DriftlyTheme
 import com.driftly.sleepsounds.presentation.theme.Primary
 import com.driftly.sleepsounds.presentation.theme.Surface
@@ -73,7 +75,10 @@ class MainActivity : ComponentActivity() {
                     containerColor = MaterialTheme.colorScheme.background,
                     bottomBar = {
                         if (showBottomBar) {
-                            NavigationBar(containerColor = SurfaceVariant) {
+                            NavigationBar(
+                                containerColor = SurfaceVariant,
+                                tonalElevation = 0.dp
+                            ) {
                                 bottomNavItems.forEach { item ->
                                     val selected = currentDestination?.hierarchy?.any {
                                         it.route == item.route
@@ -94,11 +99,16 @@ class MainActivity : ComponentActivity() {
                                                 contentDescription = item.label
                                             )
                                         },
-                                        label = { Text(item.label) },
+                                        label = {
+                                            Text(
+                                                item.label,
+                                                style = MaterialTheme.typography.labelSmall
+                                            )
+                                        },
                                         colors = NavigationBarItemDefaults.colors(
                                             selectedIconColor = Primary,
                                             selectedTextColor = Primary,
-                                            indicatorColor = Surface,
+                                            indicatorColor = Background,
                                             unselectedIconColor = MaterialTheme.colorScheme.onSurface,
                                             unselectedTextColor = MaterialTheme.colorScheme.onSurface
                                         )
