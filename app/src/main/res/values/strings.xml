@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driftly</string>
+    <string name="app_subtitle">Sleep Sounds &amp; White Noise</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_saved_mixes">Saved Mixes</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="search_sounds">Search sounds…</string>
+    <string name="category_all">All</string>
+    <string name="category_nature">Nature</string>
+    <string name="category_water">Water</string>
+    <string name="category_urban">Urban</string>
+    <string name="category_noise">Noise</string>
+    <string name="category_cozy">Cozy</string>
+    <string name="favorites">Favorites</string>
+    <string name="premium_badge">PRO</string>
+
+    <!-- Sound Names -->
+    <string name="sound_rain">Rain</string>
+    <string name="sound_thunder">Thunder</string>
+    <string name="sound_forest">Forest</string>
+    <string name="sound_wind">Wind</string>
+    <string name="sound_birds">Birds</string>
+    <string name="sound_crickets">Crickets</string>
+    <string name="sound_frogs">Frogs</string>
+    <string name="sound_campfire">Campfire</string>
+    <string name="sound_ocean_waves">Ocean Waves</string>
+    <string name="sound_river">River</string>
+    <string name="sound_rain_on_window">Rain on Window</string>
+    <string name="sound_dripping">Dripping</string>
+    <string name="sound_waterfall">Waterfall</string>
+    <string name="sound_cafe">Café</string>
+    <string name="sound_airplane">Airplane</string>
+    <string name="sound_train">Train</string>
+    <string name="sound_traffic">Traffic</string>
+    <string name="sound_keyboard">Keyboard</string>
+    <string name="sound_white_noise">White Noise</string>
+    <string name="sound_pink_noise">Pink Noise</string>
+    <string name="sound_brown_noise">Brown Noise</string>
+    <string name="sound_fan">Fan</string>
+    <string name="sound_ac">Air Conditioner</string>
+    <string name="sound_fireplace">Fireplace</string>
+    <string name="sound_clock">Clock Ticking</string>
+    <string name="sound_washing_machine">Washing Machine</string>
+    <string name="sound_cat_purring">Cat Purring</string>
+    <string name="sound_pages">Pages Turning</string>
+    <string name="sound_seagulls">Seagulls</string>
+    <string name="sound_rustling_leaves">Rustling Leaves</string>
+    <string name="sound_light_breeze">Light Breeze</string>
+    <string name="sound_heavy_rain">Heavy Rain</string>
+    <string name="sound_gentle_stream">Gentle Stream</string>
+    <string name="sound_night_ambience">Night Ambience</string>
+    <string name="sound_city_rain">City Rain</string>
+    <string name="sound_library">Library</string>
+    <string name="sound_shower">Shower</string>
+    <string name="sound_vacuum">Vacuum</string>
+    <string name="sound_dryer">Dryer</string>
+    <string name="sound_wind_chimes">Wind Chimes</string>
+
+    <!-- Mixer -->
+    <string name="now_playing">Now Playing</string>
+    <string name="sounds_active">%d sounds</string>
+    <string name="one_sound_active">1 sound</string>
+    <string name="save_mix">Save Mix</string>
+    <string name="remove_sound">Remove</string>
+    <string name="volume">Volume</string>
+
+    <!-- Timer -->
+    <string name="timer">Timer</string>
+    <string name="timer_off">Timer: Off</string>
+    <string name="timer_remaining">%s remaining</string>
+    <string name="fade_out_over">Fade out over</string>
+    <string name="play_until_stopped">Play until stopped</string>
+    <string name="timer_15min">15 min</string>
+    <string name="timer_30min">30 min</string>
+    <string name="timer_45min">45 min</string>
+    <string name="timer_1hr">1 hr</string>
+    <string name="timer_2hr">2 hr</string>
+    <string name="timer_4hr">4 hr</string>
+    <string name="timer_8hr">8 hr</string>
+    <string name="custom_time">Custom</string>
+    <string name="fade_10s">10 sec</string>
+    <string name="fade_30s">30 sec</string>
+    <string name="fade_1min">1 min</string>
+    <string name="fade_5min">5 min</string>
+
+    <!-- Saved Mixes -->
+    <string name="saved_mixes">Saved Mixes</string>
+    <string name="soundscapes">Soundscapes</string>
+    <string name="my_mixes">My Mixes</string>
+    <string name="save_mix_dialog_title">Save Mix</string>
+    <string name="mix_name_hint">Mix name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="max_free_mixes">Free users can save up to 3 mixes. Upgrade for unlimited!</string>
+    <string name="no_saved_mixes">No saved mixes yet.\nCreate one from the mixer!</string>
+    <string name="soundscape_rainy_night">Rainy Night</string>
+    <string name="soundscape_beach_sunset">Beach Sunset</string>
+    <string name="soundscape_cozy_cabin">Cozy Cabin</string>
+    <string name="soundscape_deep_focus">Deep Focus</string>
+    <string name="soundscape_forest_morning">Forest Morning</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="bedtime_reminder">Bedtime Reminder</string>
+    <string name="keep_screen_on">Keep screen on during playback</string>
+    <string name="resume_on_bluetooth">Resume on Bluetooth connect</string>
+    <string name="audio_quality">Audio Quality</string>
+    <string name="audio_quality_low">Low</string>
+    <string name="audio_quality_medium">Medium</string>
+    <string name="audio_quality_high">High</string>
+    <string name="restore_purchases">Restore Purchases</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About</string>
+    <string name="version">Version %s</string>
+
+    <!-- Premium -->
+    <string name="go_premium">Go Premium</string>
+    <string name="unlock_everything">Unlock Everything</string>
+    <string name="premium_benefit_sounds">All 40+ sounds &amp; future additions</string>
+    <string name="premium_benefit_mixes">Unlimited saved mixes</string>
+    <string name="premium_benefit_ads">No ads whatsoever</string>
+    <string name="premium_benefit_soundscapes">Exclusive Soundscapes</string>
+    <string name="premium_benefit_widget">Home screen widget</string>
+    <string name="premium_benefit_priority">Priority access to new features</string>
+    <string name="monthly_plan">Monthly</string>
+    <string name="yearly_plan">Yearly</string>
+    <string name="lifetime_plan">Lifetime</string>
+    <string name="monthly_price">$3.99/mo</string>
+    <string name="yearly_price">$24.99/yr</string>
+    <string name="lifetime_price">$49.99</string>
+    <string name="best_value">BEST VALUE</string>
+    <string name="limited_offer">LIMITED</string>
+    <string name="save_48_percent">Save 48%%</string>
+    <string name="start_free_trial">Start 7-Day Free Trial</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="cancel_anytime">Cancel anytime. No commitment.</string>
+
+    <!-- Ads -->
+    <string name="watch_ad_title">Unlock %s</string>
+    <string name="watch_ad_message">Watch a short video to unlock this sound for 24 hours.</string>
+    <string name="watch_ad">Watch Video</string>
+    <string name="no_thanks">No Thanks</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="no_sounds_prompt">Tap a sound to begin</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_name">Playback</string>
+    <string name="notification_channel_description">Sound playback controls</string>
+    <string name="notification_title">Driftly</string>
+    <string name="notification_playing">Playing %d sounds</string>
+    <string name="notification_paused">Paused</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_optimization_title">Disable Battery Optimization</string>
+    <string name="battery_optimization_message">For uninterrupted overnight playback, please disable battery optimization for Driftly.</string>
+    <string name="open_settings">Open Settings</string>
+</resources>

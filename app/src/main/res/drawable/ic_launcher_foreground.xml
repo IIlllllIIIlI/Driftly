@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Moon crescent -->
+    <path
+        android:fillColor="#4ECDC4"
+        android:pathData="M54,28 A22,22 0 1,0 54,72 A16,16 0 1,1 54,28Z" />
+
+    <!-- Sound wave 1 -->
+    <path
+        android:strokeColor="#4ECDC4"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M68,42 Q72,50 68,58" />
+
+    <!-- Sound wave 2 -->
+    <path
+        android:strokeColor="#4ECDC4"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M74,38 Q80,50 74,62" />
+
+    <!-- Sound wave 3 -->
+    <path
+        android:strokeColor="#4ECDC4"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M80,34 Q88,50 80,66" />
+</vector>
